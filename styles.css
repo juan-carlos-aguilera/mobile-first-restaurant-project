@@ -1,14 +1,19 @@
 :root {
     /* Colores */ 
-    --primary-color: #C33764;
-    --primary-color-soft: #1D2671;
-    --secondary-color: #d9a7c7;
-    --secondary-color-soft: #fffcdc;
+    --primary-color: #d9a7c7;
+    --primary-color-soft: #fffcdc;
+    --secondary-color: #C33764;
+    --secondary-color-soft: #1D2671;
     --warm-dark: #201e1c;
     --dark:  #282623;
     --grey: #bababa;
     --off-white: #faf8f7;
     --just-white: #fff;
+
+    /* Fuentes */
+    --font-sriracha: "Sriracha", serif;
+    --font-funnel-sans: "Funnel Sans", serif;
+
 }
 
 * {
@@ -19,8 +24,6 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Sriracha", serif; 
-    /* "Funnel Sans", serif; */
 }
 
 header {
@@ -39,7 +42,7 @@ header {
 header figure {
     width: 150px;
     height: 24px;
-    margin-top: 10px;
+    margin-top: 20px;
     align-self: center;
 }
 
@@ -53,22 +56,54 @@ header figure img {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 60px;
+    margin-top: 80px;
     text-align: center;
     align-self: center;
 }
 
 .header__title__container h1 {
+    font-family: var(--font-sriracha);
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
-    color: var(--just-white);
+    color: var(--warm-dark);
 }
 
 .header__title__container p {
+   font-family: var(--font-funnel-sans);
     margin-top: 25px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: var(--primary-color);
+    color: var(--warm-dark);
+}
+
+.header__title__container .header__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgb(89,73,40, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: var(--font-funnel-sans);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down_arrow.jpg');
+    background-position: center;
 }
