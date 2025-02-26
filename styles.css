@@ -26,6 +26,8 @@ html {
     font-size: 62.5%;
 }
 
+/* SECCION DEL HEADER */
+
 header {
     position: relative;
     display: flex;
@@ -106,4 +108,36 @@ header figure img {
     margin-left: 10px;
     background-image: url('./assets/icons/down_arrow.jpg');
     background-position: center;
+}
+
+/* SECCION DEL MAIN */
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    min-width: 320px;
+}
+
+.main__exchange__container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main__container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main__container--title h2 {
+    font-family: var(--font-sriracha);
+}
+
+.main__container--title p {
+    font-family: var(--font-funnel-sans);
 }
